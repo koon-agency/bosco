@@ -1,0 +1,99 @@
+---
+import Product from "./common/product.astro";
+import productOne from "../assets/series-oils-grease-removebg-preview.png";
+import productTwo from "../assets/series-mh1-removebg-preview.png";
+import productThree from "../assets/series-pe5-neu-removebg-preview.png";
+import productFour from "../assets/c-series-main-removebg-preview.png";
+import productFive from "../assets/serie-as1-removebg-preview.png";
+import productSix from "../assets/series-cc01-removebg-preview.png";
+import productSeven from "../assets/aventics-series-spm-removebg-preview.png";
+import productEight from "../assets/series-safety-valves-1-1-removebg-preview.png";
+import Title from "./common/title.astro";
+
+---
+<script>
+	var splide = new Splide('.splide', {
+	 type   : 'loop',
+  perPage: 4,
+  speed:1000,
+  perMove: 1,
+  autoplay:true,
+  drag:'free',
+  arrows:false,
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+}
+		});
+	splide.mount();
+
+</script>
+
+<div class="mt-20 px-10">
+	<div class="text-center">
+		<Title title1="product" title2="CATEGORIES"/>
+		<p class="text-darkGreyColor lg:text-base text-sm w-full lg:w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium quis quasi similique beatae perspiciatis modi alias odio et recusandae, rerum ducimus? </p>
+	</div>
+	<section class="splide mt-10" aria-labelledby="carousel-heading">
+	   <div class="splide__track">
+		   <ul class="splide__list">
+			   <li class="splide__slide">
+			   <Product name="series oils" img={productOne}/>
+			   </li>
+			   <li class="splide__slide">
+				   <Product name="series mh1" img={productTwo}/>
+			   </li>
+			   <li class="splide__slide"><Product name="series pe5" img={productThree}/></li>
+		     <li class="splide__slide">
+
+			   <Product name="c series main" img={productFour}/>
+			   </li>
+		     <li class="splide__slide">
+			   <Product name="serie as1" img={productFive}/>
+			   </li>
+		     <li class="splide__slide">
+			   <Product name="series cc01" img={productSix}/>
+			   </li>
+		     <li class="splide__slide">
+			   <Product name="aventics" img={productSeven}/>
+			   </li>
+		     <li class="splide__slide">
+			   <Product name="series safety" img={productEight}/>
+			   </li>
+			</ul>
+	   </div>
+   </section>
+
+</div>
+<style is:global>
+	.pro-title::after {
+		content: "";
+		bottom: 0;
+		top:20px;
+		height: 5px;
+		left: 50%;
+		margin: 10px 0 0 -70px;
+		position: absolute;
+		width: 140px;
+		background-color:#efefef
+	}
+	.pro{
+		transition: all 0.5s ease-out 0s;
+		-webkit-transition: all 0.5s ease-out 0s;
+	}
+	.pro:hover{
+		border-color: #007cbc;
+	}
+	.pro-img{
+		transition: all 0.5s ease-out 0s;
+		-webkit-transition: all 0.5s ease-out 0s;
+	}
+</style>

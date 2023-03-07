@@ -1,0 +1,107 @@
+---
+import Title from "./common/title.astro";
+import Asco from "../assets/Asco Brand.jpeg";
+import Topworx from "../assets/Topworx logo.jpg";
+import Aventics from "../assets/Aventics logo.png";
+import Burkert from "../assets/burkert logo.png";
+import Conax from "../assets/conax logo.png";
+import Everlasting from "../assets/Everlasting Valve logo.png";
+import Spx from "../assets/SPX_Flow_Logo.jpg";
+import Neles from "../assets/neles-logo.jpg";
+---
+<script>
+    
+	var splide = new Splide(document.getElementById('partner'), {
+	 type   : 'loop',
+  perPage: 6,
+  gap:4,
+  arrows:false,
+   autoScroll: {
+    speed: 1,
+  },
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+}
+		});
+	splide.mount(window.splide.Extensions);
+
+</script>
+
+<div class="flex justify-center items-center px-10">
+    <div class="mr-3">
+          <h1 class="text-center text-blueColor font-light uppercase lg:text-3xl text-2xl mb-0 ">Our</h1>
+            <h1 class="text-center text-blueColor font-bold lg:text-4xl text-3xl uppercase">partners</h1>
+    </div>
+ 
+    <div>
+
+        <section class="splide mt-10" aria-labelledby="carousel-heading" id="partner">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+
+                            <img class="max-w-full max-h-full" src={Asco}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Topworx}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Aventics}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Burkert}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Conax}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Everlasting}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Spx}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Neles}/>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<style>
+    
+    img {
+        filter:brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 346deg    );
+        transition:all 0.4s ease-in-out;
+        width:100px;
+        height:70px;
+    }
+    img:hover{
+        filter:brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 346deg    )
+    }
+</style>

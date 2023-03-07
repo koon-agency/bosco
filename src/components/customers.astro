@@ -1,0 +1,131 @@
+---
+import Title from "./common/title.astro";
+import Satorp from "../assets/download (1).jpeg";
+import Maaden from "../assets/download (1).png";
+import Almarai from "../assets/download (3).jpeg";
+import Sabic from "../assets/download (3).png";
+import Sadarah from "../assets/download (4).jpeg";
+import Sapcim from "../assets/download (4).png";
+import Aramco from "../assets/download (5).jpeg";
+import Water from "../assets/download (5).png";
+import Marafiq from "../assets/download (6).png";
+import Electric from "../assets/download (6).jpeg";
+import Sasrif from "../assets/download (7).png";
+import Chevron from "../assets/download.jpeg";
+---
+<script>
+    
+	var splide = new Splide(document.getElementById('customers'), {
+	 type   : 'loop',
+  perPage: 6,
+  gap:4,
+  arrows:false,
+   autoScroll: {
+    speed: 1,
+  },
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      height : '6rem',
+    },
+}
+		});
+	splide.mount(window.splide.Extensions);
+
+</script>
+
+<div class="flex justify-center items-center px-10">
+    <div class="mr-3">
+          <h1 class="text-center text-blueColor font-light uppercase lg:text-3xl text-2xl mb-0 ">Our</h1>
+            <h1 class="text-center text-blueColor font-bold lg:text-4xl text-3xl uppercase">customers</h1>
+    </div>
+ 
+    <div>
+
+        <section class="splide mt-10" aria-labelledby="carousel-heading" id="customers">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+
+                            <img class="max-w-full max-h-full" src={Satorp}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Chevron}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Sasrif}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Electric}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Marafiq}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Water}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Aramco}/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Sapcim}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Sadarah}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Sabic}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Almarai}/>
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="flex justify-center items-center">
+                    <img class="max-w-full max-h-full" src={Maaden}/>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<style>
+    
+    img {
+        filter:brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 346deg    );
+        transition:all 0.4s ease-in-out;
+        width:100px;
+        height:70px;
+    }
+    img:hover{
+        filter:brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 346deg    )
+    }
+</style>

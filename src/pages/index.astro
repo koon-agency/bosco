@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/hero.astro';
+import Products from '../components/products.astro';
+import About from '../components/about.astro';
+import Catalog from '../components/catalog.astro';
+import Services from '../components/services.astro';
+import Partners from '../components/partners.astro';
+import Customers from '../components/customers.astro';
+import Footer from '../components/footer.astro';
+---
+
+<Layout title="BROSCO">
+	<main>
+		<div class="bg-banner">
+			<Nav/>
+			<Hero/>
+		</div>
+
+		<Products/>
+		<About/>
+		<Catalog/>
+		<Services/>
+		<Partners/>
+		<hr class="text-blueColor my-5 mx-10">
+		<Customers/>
+		<Footer/>
+	</main>
+</Layout>
+
+<style>
+ .bg-banner{
+        background: url(../assets/bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+
+    }
+</style>
