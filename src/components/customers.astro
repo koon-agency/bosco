@@ -16,34 +16,30 @@ import Chevron from "../assets/download.jpeg";
 <script>
     
 	var splide = new Splide(document.getElementById('customers'), {
-	 type   : 'loop',
-  perPage: 6,
-  gap:4,
-  arrows:false,
-   autoScroll: {
-    speed: 1,
-  },
-  breakpoints: {
-    640: {
-      perPage: 2,
-      gap    : '.7rem',
-      height : '6rem',
-    },
-    480: {
-      perPage: 1,
-      gap    : '.7rem',
-      height : '6rem',
-    },
-}
+	    type   : 'loop',
+        perPage: 6,
+        gap:4,
+        arrows:false,
+        autoScroll: {
+            speed: 1,
+        },
+        breakpoints: {
+            640: {
+            perPage: 3,
+            },
+            480: {
+            perPage: 2,
+            },
+        }
 		});
 	splide.mount(window.splide.Extensions);
 
 </script>
 
-<div class="flex justify-center items-center px-10">
+<div class="flex justify-center items-center px-10  md:flex-row flex-col">
     <div class="mr-3">
-          <h1 class="text-center text-blueColor font-light uppercase lg:text-3xl text-2xl mb-0 ">Our</h1>
-            <h1 class="text-center text-blueColor font-bold lg:text-4xl text-3xl uppercase">customers</h1>
+          <h1 class="text-center text-blueColor font-light uppercase lg:text-2xl text-xl mb-0 ">Our</h1>
+            <h1 class="text-center text-blueColor font-bold lg:text-3xl text-2xl uppercase">customers</h1>
     </div>
  
     <div>

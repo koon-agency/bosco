@@ -3,11 +3,12 @@ import Title from "./common/title.astro";
 import servicesImg from "../assets/services.png"
 import Service from "./common/service.astro";
 ---
-<div>
+<div class="mb-10 relative">
+    <div class="bg-services absolute top-0 bottom-0 w-full"></div>
     <Title title1="Our" title2="services"/>
-    <div class="relative mt-10">
-        <img src={servicesImg} class="opacity-10"/>
-        <div class="absolute bottom-0 top-0 z-10 grid grid-cols-3 px-10 gap-4 justify-center">
+    <div class="mt-10">
+        <div class="!opacity-100">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-10 gap-4 justify-center">
             <Service title="Inspection Services" description="Help you reduce risk and ensure quality and accuracy, as well as meeting regulatory requirements"/>
             <Service title="Inspection Services" description="Help you reduce risk and ensure quality and accuracy, as well as meeting regulatory requirements"/>
             <Service title="Inspection Services" description="Help you reduce risk and ensure quality and accuracy, as well as meeting regulatory requirements"/>
@@ -16,4 +17,11 @@ import Service from "./common/service.astro";
             <Service title="Inspection Services" description="Help you reduce risk and ensure quality and accuracy, as well as meeting regulatory requirements"/>
         </div>
     </div>
+    </div>
 </div>
+<style>
+    .bg-services{
+        opacity:0.1;
+        background:url('../assets/services.png') no-repeat left center;
+    }
+</style>

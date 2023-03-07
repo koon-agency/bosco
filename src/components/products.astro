@@ -21,15 +21,14 @@ import Title from "./common/title.astro";
   drag:'free',
   arrows:false,
   breakpoints: {
+	992:{
+		perPage: 3,
+	},
     640: {
       perPage: 2,
-      gap    : '.7rem',
-      height : '6rem',
     },
     480: {
       perPage: 1,
-      gap    : '.7rem',
-      height : '6rem',
     },
 }
 		});
@@ -40,7 +39,7 @@ import Title from "./common/title.astro";
 <div class="mt-20 px-10">
 	<div class="text-center">
 		<Title title1="product" title2="CATEGORIES"/>
-		<p class="text-darkGreyColor lg:text-base text-sm w-full lg:w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium quis quasi similique beatae perspiciatis modi alias odio et recusandae, rerum ducimus? </p>
+		<p class="my-6 text-darkGreyColor lg:text-base text-sm w-full lg:w-1/2 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium quis quasi similique beatae perspiciatis modi alias odio et recusandae, rerum ducimus? </p>
 	</div>
 	<section class="splide mt-10" aria-labelledby="carousel-heading">
 	   <div class="splide__track">
