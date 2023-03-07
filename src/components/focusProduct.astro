@@ -1,0 +1,61 @@
+---
+import Title from "./common/title.astro";
+import proOne from "../assets/580x3-aventics (1).jpg"
+import proTwo from "../assets/580-cover-503-aventics.jpg"
+import proThree from "../assets/2002-series-high-res.jpg"
+import proFour from "../assets/2005-series-2-.jpg"
+---
+<script>
+  import { Grid } from '@splidejs/splide-extension-grid';
+    const splide = new Splide( document.getElementById("focus"), {
+  type       : 'loop',
+  height     : '14rem',
+  perPage    : 2,
+  perMove    : 1,
+  gap:6,
+  arrows:false,
+  grid       : {
+    // You can define rows/cols instead of dimensions.
+    dimensions: [ [ 1, 1 ], [ 2, 2 ], [ 2, 1 ], [ 1, 2 ], [ 2, 2 ], [ 3, 2 ] ],
+    gap: {
+      row: '6px',
+      col: '6px',
+    },
+  },
+  breakpoints: {
+    640: {
+      height : '8rem',
+      perPage: 1,
+      grid   : {
+        dimensions: [ [ 2, 2 ], [ 1, 1 ], [ 2, 1 ], [ 1, 2 ], [ 2, 2 ] ],
+      },
+    },
+  },
+} );
+
+splide.mount( { Grid } );
+</script>
+<div class="bg-[#F5F5F5] py-10 pt-20 my-10 px-20">
+    <Title title1="Product" title2="Aventics"/>
+    <section class="splide mt-10" aria-labelledby="carousel-heading" id="focus">
+	   <div class="splide__track">
+		   <ul class="splide__list">
+			   <li class="splide__slide">
+			   <img class="w-full h-full" src={proOne}/>
+			   </li>
+			   <li class="splide__slide">
+			   <img class="w-full h-full" src={proTwo}/>
+			   </li>
+			   <li class="splide__slide">
+			   <img class="w-full h-full" src={proThree}/>
+			   </li>
+			   <li class="splide__slide">
+			   <img class="w-full h-full" src={proFour}/>
+			   </li>
+         <li class="splide__slide">
+			   <img class="w-full h-full" src={proOne}/>
+			   </li>
+			</ul>
+	   </div>
+   </section>
+</div>
