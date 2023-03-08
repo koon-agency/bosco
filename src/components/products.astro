@@ -1,13 +1,13 @@
 ---
 import Product from "./common/product.astro";
-import productOne from "../assets/series-oils-grease-removebg-preview.png";
-import productTwo from "../assets/series-mh1-removebg-preview.png";
-import productThree from "../assets/series-pe5-neu-removebg-preview.png";
-import productFour from "../assets/c-series-main-removebg-preview.png";
-import productFive from "../assets/serie-as1-removebg-preview.png";
-import productSix from "../assets/series-cc01-removebg-preview.png";
-import productSeven from "../assets/aventics-series-spm-removebg-preview.png";
-import productEight from "../assets/series-safety-valves-1-1-removebg-preview.png";
+import productOne from "../assets/pro1.png";
+import productTwo from "../assets/pro2.png";
+import productThree from "../assets/pro3.png";
+import productFour from "../assets/pro4.png";
+import productFive from "../assets/pro5.png";
+import productSix from "../assets/pro6.png";
+import productSeven from "../assets/pro7.png";
+import productEight from "../assets/pro8.png";
 import Title from "./common/title.astro";
 
 ---
@@ -40,60 +40,35 @@ import Title from "./common/title.astro";
 <div class="mt-20 px-10">
 	<div class="text-center">
 		<Title title1="product" title2="CATEGORIES" letter="p"/>
-		<p class="my-6 text-darkGreyColor lg:text-base text-sm w-full lg:w-1/2 mx-auto md:text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium quis quasi similique beatae perspiciatis modi alias odio et recusandae, rerum ducimus? </p>
 	</div>
 	<section class="splide mt-10" aria-labelledby="carousel-heading">
 	   <div class="splide__track">
 		   <ul class="splide__list">
 			   <li class="splide__slide">
-			   <Product name="series oils" img={productOne}/>
+			   <Product  img={productOne}/>
 			   </li>
 			   <li class="splide__slide">
-				   <Product name="series mh1" img={productTwo}/>
+				   <Product  img={productTwo}/>
 			   </li>
-			   <li class="splide__slide"><Product name="series pe5" img={productThree}/></li>
+			   <li class="splide__slide"><Product  img={productThree}/></li>
 		     <li class="splide__slide">
 
-			   <Product name="c series main" img={productFour}/>
+			   <Product  img={productFour}/>
 			   </li>
 		     <li class="splide__slide">
-			   <Product name="serie as1" img={productFive}/>
+			   <Product  img={productFive}/>
 			   </li>
 		     <li class="splide__slide">
-			   <Product name="series cc01" img={productSix}/>
+			   <Product  img={productSix}/>
 			   </li>
 		     <li class="splide__slide">
-			   <Product name="aventics" img={productSeven}/>
+			   <Product img={productSeven}/>
 			   </li>
 		     <li class="splide__slide">
-			   <Product name="series safety" img={productEight}/>
+			   <Product  img={productEight}/>
 			   </li>
 			</ul>
 	   </div>
    </section>
 
 </div>
-<style is:global>
-	.pro-title::after {
-		content: "";
-		bottom: 0;
-		top:20px;
-		height: 5px;
-		left: 50%;
-		margin: 10px 0 0 -70px;
-		position: absolute;
-		width: 140px;
-		background-color:#efefef
-	}
-	.pro{
-		transition: all 0.5s ease-out 0s;
-		-webkit-transition: all 0.5s ease-out 0s;
-	}
-	.pro:hover{
-		border-color: #007cbc;
-	}
-	.pro-img{
-		transition: all 0.5s ease-out 0s;
-		-webkit-transition: all 0.5s ease-out 0s;
-	}
-</style>

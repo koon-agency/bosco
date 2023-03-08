@@ -1,14 +1,10 @@
 ---
-import catalogImg from "../assets/home_catalog.png"
-import catalogPdf from "../assets/Company Profile - Brosco 2023.pdf"
+import catalogPdf from "/ecatalog.pdf"
 ---
 
-<div class="w-full relative bg-lightBlue flex px-2 lg:px-10 my-20 py-10 lg:py-16 lg:justify-start justify-around items-center">
+<div class="w-full bg-lightBlue flex px-2 lg:px-10 my-20 py-10 lg:py-16 justify-around items-center">
     <h1 class="text-white font-bold uppercase lg:text-5xl text-2xl">our catalog</h1>
     <a class="lg:ml-56 text-sm text-white hover:text-textGrey self-center justify-self-center p-3 border border-white rounded hover:bg-white" href={catalogPdf} target="_blank">Download <i class="fa-solid fa-cloud-arrow-down"></i></a>
-    <div class="absolute right-10 w-80 h-60 lg:block hidden">
-        <img src={catalogImg} class="w-full h-full"/>
-    </div>
 </div>
 <style>
     a{

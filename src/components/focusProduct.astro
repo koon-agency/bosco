@@ -1,9 +1,13 @@
 ---
 import Title from "./common/title.astro";
-import proOne from "../assets/580x3-aventics (1).jpg"
-import proTwo from "../assets/580-cover-503-aventics.jpg"
-import proThree from "../assets/2002-series-high-res.jpg"
-import proFour from "../assets/2005-series-2-.jpg"
+import proOne from "../assets/f1.jpeg"
+import proTwo from "../assets/f2.jpeg"
+import proThree from "../assets/f3.png"
+import proFour from "../assets/f4.png"
+import proFive from "../assets/f5.jpeg"
+import proSix from "../assets/f6.jpeg"
+import proSeven from "../assets/f7.jpeg"
+import proEight from "../assets/f8.jpeg"
 ---
 <script>
   import { Grid } from '@splidejs/splide-extension-grid';
@@ -35,8 +39,8 @@ import proFour from "../assets/2005-series-2-.jpg"
 
 splide.mount( { Grid } );
 </script>
-<div class="bg-[#F5F5F5] py-20 my-10 md:px-20 px-8">
-    <Title title1="Product" title2="Aventics" letter="p"/>
+<div class="bg-[#F5F5F5] md:py-20 py-8 my-10 md:px-20 px-8">
+    <Title title1="Product" title2="Details" letter="p"/>
     <section class="splide mt-10" aria-labelledby="carousel-heading" id="focus">
 	   <div class="splide__track">
 		   <ul class="splide__list">
@@ -53,8 +57,9 @@ splide.mount( { Grid } );
 			   <img class="object-contain	w-full h-full	" src={proFour}/>
 			   </li>
          <li class="splide__slide bg-white flex justify-center items-center">
-			   <img class="object-contain	w-full h-full	" src={proOne}/>
+			   <img class="object-contain	w-full h-full	" src={proFive}/>
 			   </li>
+      
 			</ul>
 	   </div>
    </section>
