@@ -6,7 +6,8 @@ export interface Props {
 
 const { title, description } = Astro.props;
 ---
-<div>
-    <h1 class="text-blueColor font-bold uppercase lg:text-2xl text-xl">{title}</h1>
+<div class="text-center md:mb-10 mb-5">
+    <slot />
+    <h1 class="my-2 text-blueColor font-bold uppercase lg:text-2xl text-xl">{title}</h1>
     <p class="text-textGrey lg:text-base text-sm">{description}</p>
 </div>

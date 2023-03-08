@@ -2,9 +2,13 @@
 export interface Props {
 	title1: string;
     title2: string;
+    letter: string;
 }
 
-const { title1, title2 } = Astro.props;
+const { title1, title2, letter } = Astro.props;
 ---
-<h1 class="text-center text-blueColor font-light uppercase lg:text-5xl text-4xl mb-0 ">{title1}</h1>
-<h1 class="text-center text-blueColor font-bold lg:text-5xl text-4xl">{title2}</h1>
+<div data-aos="fade-up">
+<h1 class="text-center font-great text-[#ebebeb] text-[150px] font-black opacity-50 uppercase">{letter}</h1>
+<h1 class="mt-[-100px] relative text-center text-blueTitle font-light uppercase lg:text-4xl text-3xl mb-0 ">{title1}</h1>
+<h1 class="text-center text-blueTitle font-bold lg:text-5xl text-4xl uppercase">{title2}</h1>
+</div>

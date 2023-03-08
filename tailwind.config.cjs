@@ -9,7 +9,9 @@ module.exports = {
         darkGreyColor: "#5c5c5c",
         textGrey: "#555",
         blueColor: "#007cbc",
+        blueTitle: "#426DA7",
         lightBlue: "#298fc4",
+        orangeColor: "#FBAD2C",
       },
     },
     fontFamily: {
